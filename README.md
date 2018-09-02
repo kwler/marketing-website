@@ -31,4 +31,5 @@ Run `firebase deploy --token $FIREBASE_TOKEN --project $FIREBASE_PROJECT` after 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ### Resources:
+- [Bootstrap Components](https://getbootstrap.com/docs/4.1/components/alerts/)
 - [Travis CI](https://houssein.me/continuous-integration-angular-firebase-travisci)
