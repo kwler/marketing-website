@@ -7,7 +7,8 @@ import {Component, OnInit, Output} from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  showNav = false;
+  showFeatures = false;
+  showMenu = false;
 
   constructor() { }
 
@@ -15,7 +16,11 @@ export class NavComponent implements OnInit {
   }
 
   toggleShow() {
-    this.showNav = !this.showNav;
+    this.showFeatures = !this.showFeatures;
+  }
+
+  toggleMenu() {
+    this.showMenu = !this.showMenu;
   }
 
 }
