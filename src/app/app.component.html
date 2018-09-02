@@ -1,6 +1,9 @@
 <div class="container-fluid">
-  <div class="alert alert-danger" role="alert">
-    Website Under Construction
+  <div class="alert alert-danger" role="alert" *ngIf="showWarning">
+    Website Under Construction. Please bear with us
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="hideWarning()">
+      <span aria-hidden="true">&times;</span>
+    </button>
   </div>
   <app-nav></app-nav>
 </div>
