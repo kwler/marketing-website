@@ -15,7 +15,6 @@ export class NavComponent implements OnInit {
   }
 
   toggleShow() {
-    console.log("toggled");
     this.showNav = !this.showNav;
   }
 
