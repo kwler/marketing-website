@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { FeaturesComponent } from './features/features.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent
+    NavComponent,
+    FeaturesComponent
   ],
   imports: [
     BrowserModule,
