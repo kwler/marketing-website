@@ -1,3 +1,17 @@
-<p>
-  features works!
-</p>
+<section>
+  <div class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item" [ngClass]="{active:activeSlide==0}" style="background-color: aqua">1</div>
+      <div class="carousel-item" [ngClass]="{active:activeSlide==1}" style="background-color: orange">2</div>
+      <div class="carousel-item" [ngClass]="{active:activeSlide==2}" style="background-color: pink">3</div>
+    </div>
+    <a class="carousel-control-prev" (click)="previous()" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous Feature</span>
+    </a>
+    <a class="carousel-control-next" (click)="next()" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next Feature</span>
+    </a>
+  </div>
+</section>
