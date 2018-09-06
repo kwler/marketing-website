@@ -7,12 +7,15 @@
   backface-visibility: visible;
 }
 
-.carousel-item img {
+img {
   height: 100%;
   width: 100%;
 }
 
-//Bootstrap Padding Fix
-[class*="col-"] {
-  padding: 1rem;
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
+
+
