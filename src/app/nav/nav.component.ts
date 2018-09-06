@@ -7,20 +7,12 @@ import {Component, OnInit, Output} from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  showFeatures = false;
-  showMenu = false;
+  public collapseNav = true;
+  public collapseFeatures = true;
 
   constructor() { }
 
   ngOnInit() {
-  }
-
-  toggleShow() {
-    this.showFeatures = !this.showFeatures;
-  }
-
-  toggleMenu() {
-    this.showMenu = !this.showMenu;
   }
 
 }

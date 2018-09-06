@@ -3,7 +3,7 @@
     <img src="../../assets/icons/icon-36x36.png" width="36" height="36" alt="Kwler.NET Logo">
     <span>Kwler.NET</span>
   </a>
-  <button (click)="toggleMenu()"
+  <button (click)="collapseNav = !collapseNav"
           class="navbar-toggler"
           type="button"
           aria-controls="navbarSupportedContent"
@@ -12,7 +12,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" [ngClass]="{show: showMenu}" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse" [ngbCollapse]="collapseNav" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
         <a class="nav-link" href="#">
@@ -23,7 +23,7 @@
       <li class="nav-item">
         <a class="nav-link" href="#">About Us</a>
       </li>
-      <li class="nav-item dropdown" (click)="toggleShow()" [ngClass]="{show: showFeatures}">
+      <li class="nav-item dropdown" (click)="collapseFeatures = !collapseFeatures">
         <a class="nav-link dropdown-toggle"
            href="#"
            id="navbarDropdown"
@@ -33,7 +33,7 @@
            aria-expanded="false">
           Features
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown" [ngClass]="{show: showFeatures}">
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown" [ngbCollapse]="collapseFeatures">
           <a class="dropdown-item" href="#">Emerging Artists</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="https://360.kwler.net">Kwler 360</a>
