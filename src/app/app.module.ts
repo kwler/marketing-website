@@ -8,12 +8,14 @@ import { NavComponent } from './nav/nav.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { FeaturesComponent } from './features/features.component';
+import { TechnologiesComponent } from './technologies/technologies.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    FeaturesComponent
+    FeaturesComponent,
+    TechnologiesComponent
   ],
   imports: [
     BrowserModule,
