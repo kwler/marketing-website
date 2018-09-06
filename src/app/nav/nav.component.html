@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
   <a class="navbar-brand" href="#">
-    <img src="../../assets/icons/icon-36x36.png" width="36" height="36" alt="Kwler.NET Logo">
+    <img src="/assets/icons/icon-72x72.png" width="36" height="36" alt="Kwler.NET Logo">
     <span>Kwler.NET</span>
   </a>
   <button (click)="collapseNav = !collapseNav"
@@ -12,33 +12,27 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" [ngbCollapse]="collapseNav" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse" [ngbCollapse]="collapseNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">
-          Home
-          <span class="sr-only">(current)</span>
-        </a>
+        <a class="nav-link" href="#">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">About Us</a>
       </li>
       <li class="nav-item dropdown" (click)="collapseFeatures = !collapseFeatures">
         <a class="nav-link dropdown-toggle"
-           href="#"
-           id="navbarDropdown"
            role="button"
-           data-toggle="dropdown"
            aria-haspopup="true"
            aria-expanded="false">
           Features
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown" [ngbCollapse]="collapseFeatures">
-          <a class="dropdown-item" href="#">Emerging Artists</a>
+        <div class="dropdown-menu" [ngbCollapse]="collapseFeatures">
+          <a class="dropdown-item">Kwler RAD/AR™</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="https://360.kwler.net">Kwler 360</a>
-          <a class="dropdown-item" href="#">Kwler DNA</a>
-          <a class="dropdown-item" href="#">Kwler ReMIX</a>
+          <a class="dropdown-item" href="https://dna.kwler.net">Kwler DNA</a>
+          <a class="dropdown-item" href="https://remix.kwler.net">Kwler ReMIX</a>
         </div>
       </li>
       <li class="nav-item">
