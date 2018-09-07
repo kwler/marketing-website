@@ -32,4 +32,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ### Resources:
 - [Bootstrap Components](https://getbootstrap.com/docs/4.1/components/alerts/)
+- [SASS Tricks: The Ampersand](https://css-tricks.com/the-sass-ampersand/)
 - [Travis CI](https://houssein.me/continuous-integration-angular-firebase-travisci)
