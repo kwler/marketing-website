@@ -9,13 +9,15 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { FeaturesComponent } from './features/features.component';
 import { TechnologiesComponent } from './technologies/technologies.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     FeaturesComponent,
-    TechnologiesComponent
+    TechnologiesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
